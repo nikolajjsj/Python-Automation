@@ -3,6 +3,7 @@ import subprocess
 ip = "192.168.1.102"
 person = "192.168.1.102:"
 
+
 proc = subprocess.Popen(["ping", ip], stdout=subprocess.PIPE)
 while True:
     line = proc.stdout.readline()
